@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState } from 'react';
-import Header from './components/Header';
+import Header from './components/Header.tsx';
 import Hero from './components/Hero';
 import Footer from './components/Footer';
 import Mission from './components/Mission';
