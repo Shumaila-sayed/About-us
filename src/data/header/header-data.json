@@ -1,0 +1,39 @@
+{
+    "logo": {
+        "src":"/log.svg",
+        "name":"CDS"
+    },
+	"navLinks": [
+		{
+			"id": 1,
+			"label": "Home"
+		},
+		{
+			"id": 2,
+			"label": "About"
+		},
+		{
+			"id": 3,
+			"label": "Industries"
+		},
+		{
+			"id": 4,
+			"label": "Products"
+		},
+		{
+			"id": 5,
+			"label": "Partners"
+		},
+		{
+			"id": 6,
+			"label": "Pricing"
+		},
+		{
+			"id": 7,
+			"label": "Resources"
+		}
+	],
+
+    "ctaBook": "Book Demo",
+    "ctaLogin": "Log in"
+}

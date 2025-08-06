@@ -1,0 +1,41 @@
+{
+	"newsletterText": "Subscribe to our newsletter and stay up-to-date.",
+	"copyRightText": "© 2025 CDS. All rights reserved.",
+	"legalLinks": [
+		"Cookie Policy",
+		"Privacy Policy",
+		"Terms of Use",
+		"Business Associate Agreement",
+		"Media Kit",
+		"Refund Policy"
+	],
+	"email": "helpdesk@centraldatastorage.com",
+	"socialMedia": [
+		{
+			"src": "/email.svg",
+			"name": "Email"
+		},
+		{
+			"src": "/x.svg",
+			"name": "X"
+		},
+		{
+			"src": "/telegram.svg",
+			"name": "Telegram"
+		},
+		{
+			"src": "/facebook.svg",
+			"name": "Facebook"
+		},
+		{
+			"src": "/instagram.svg",
+			"name": "Instagram"
+		},
+		{
+			"src": "/youtube.svg",
+			"name": "YouTube"
+		}
+	],
+	"badges": ["/CDS.svg", "/HIPPA.svg"],
+	"disclaimer": "We protect your data against breaches, data loss and ransomware, all while being HIPAA compliant."
+}

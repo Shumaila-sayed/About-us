@@ -1,0 +1,13 @@
+{
+    "aboutHeroSection": {
+        "heading":"About CDS",
+        "sectionHeading": "Defending the Foundation of Your Business with",
+        "subHeading": "End-to-End Cybersecurity",
+        "buttonText": "Protect Your Business Now!"
+    }, "aboutOurMission": {
+        "sectionHeading": "Our Mission",
+        "subHeading": "at Central Data Storage",
+        "paragraph": "At Central Data Storage, our mission has evolved, because your threats have too. What began with clean, verified backup has now grown into a 360° cybersecurity commitment. Today, we protect not just your data, but your entire digital ecosystem.",
+        "subText": "We detect. We respond. We restore."
+    }
+}
