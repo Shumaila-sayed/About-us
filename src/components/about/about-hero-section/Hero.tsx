@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import HeroData from '../../../data/about/about-page-data.json';
 
-export default function Hero({ content }) {
+export default function Hero() {
 	return (
 		<section
 			className='bg-gradient-to-r from-[#1177FE] to-[#001746] text-white py-25 rounded-3xl relative overflow-hidden m-7'
@@ -16,7 +17,7 @@ export default function Hero({ content }) {
 					transition={{ duration: 0.6 }}
 					className='text-xl uppercase mb-2'
 				>
-					{content.tagline}
+					{HeroData.aboutHeroSection.heading}
 				</motion.h2>
 				<motion.h1
 					initial={{ opacity: 0, y: 50 }}
@@ -24,7 +25,15 @@ export default function Hero({ content }) {
 					transition={{ delay: 0.2, duration: 0.6 }}
 					className='text-4xl md:text-5xl leading-tight px-53 mb-12'
 				>
-					{content.headline}
+					{HeroData.aboutHeroSection.sectionHeading}
+				</motion.h1>
+				<motion.h1
+					initial={{ opacity: 0, y: 50 }}
+					animate={{ opacity: 1, y: 0 }}
+					transition={{ delay: 0.2, duration: 0.6 }}
+					className='text-4xl md:text-5xl leading-tight px-53 mb-12'
+				>
+					{HeroData.aboutHeroSection.subHeading}
 				</motion.h1>
 				<motion.button
 					initial={{ scale: 0.9, opacity: 0 }}
@@ -32,13 +41,12 @@ export default function Hero({ content }) {
 					transition={{ delay: 0.4, duration: 0.5 }}
 					className='bg-[#7dd4ee8c] text-white mt-4 border-2 border-x-[#C4ECFE] border-y-0 px-6 py-3 flex max-w-fit mx-auto items-center gap-2 rounded-full'
 				>
-					{content.button}{' '}
+					{HeroData.aboutHeroSection.buttonText}{' '}
 					<Image
 						src='/arrow.png'
 						alt='Arrow'
 						width={30}
 						height={20}
-						
 					/>
 				</motion.button>
 			</div>

@@ -1,15 +1,16 @@
 'use client';
 
 import Image from 'next/image';
+import footerData from '../../data/footer/footer-data.json';
 
-export default function Footer({content}) {
+export default function Footer() {
 
 	return (
 		<footer className='bg-white my-4 p-8 text-sm text-gray-600 border-t-2 border-t-[#001746]'>
 			<div className='max-w-7xl mx-auto flex justify-between gap-6 mb-4'>
 				<div>
 					<div className='flex gap-5 items-center'>
-						{content.badges.map((src, i) => (
+						{footerData.badges.map((src, i) => (
 							<Image
 								key={i}
 								src={src}
@@ -19,11 +20,11 @@ export default function Footer({content}) {
 							/>
 						))}
 					</div>
-					<p className='max-w-[24rem] mt-3'>{content.disclaimer}</p>
+					<p className='max-w-[24rem] mt-3'>{footerData.disclaimer}</p>
 				</div>
 
 				<div>
-					<p className='font-extrabold pl-8 mb-4'>{content.newsletterText}</p>
+					<p className='font-extrabold pl-8 mb-4'>{footerData.newsletterText}</p>
 					<form className='flex rounded-full bg-gray-100 py-2 px-4 '>
 						<input
 							type='email'
@@ -42,9 +43,9 @@ export default function Footer({content}) {
 
 			<div className='flex justify-between'>
 				<div className='py-4 px-2 text-xs'>
-					<p className='mb-2 font-extrabold'>{content.copyright}</p>
+					<p className='mb-2 font-extrabold'>{footerData.copyRightText}</p>
 					<div className='flex flex-wrap justify-center gap-3 text-gray-500'>
-						{content.legalLinks.map((link, i) => (
+						{footerData.legalLinks.map((link, i) => (
 							<a
 								key={i}
 								href='#'
@@ -57,17 +58,17 @@ export default function Footer({content}) {
 				</div>
 				<div className='space-y-3 text-center mr-3 md:text-right'>
 					<div className='flex justify-center md:justify-end gap-2'>
-						{content.socials.map((src, i) => (
+						{footerData.socialMedia.map((src, i) => (
 							<Image
 								key={i}
-								alt={`Badge ${i + 1}`}
+								alt={src.name}
 								width={30}
 								height={20}
-								src={src}
+								src={src.src}
 							/>
 						))}
 					</div>
-					<p className='mt-2'>{content.email}</p>
+					<p className='mt-2'>{footerData.email}</p>
 				</div>
 			</div>
 		</footer>

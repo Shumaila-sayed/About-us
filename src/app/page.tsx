@@ -1,28 +1,13 @@
-"use client"
-
-import { useEffect, useState } from 'react';
-import Header from './components/Header.tsx';
-import Hero from './components/Hero';
-import Footer from './components/Footer';
-import Mission from './components/Mission';
+import Hero from '../components/about/about-hero-section/Hero';
+import Mission from '../components/about/about-our-mission/Mission';
 
 export default function Home() {
-	const [data, setData] = useState(null);
-
-	useEffect(() => {
-		fetch('/data.json')
-			.then((res) => res.json())
-			.then(setData);
-	}, []);
-
-	if (!data) return <div className='text-center mt-10'>Loading...</div>;
+	
 
 	return (
 		<>
-			<Header nav={data.header} />
-			<Hero content={data.hero} />
-			<Mission content={data.mission} />
-			<Footer content={data.footer} />
+			<Hero />
+			<Mission />
 		</>
 	);
 }
