@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import HeroData from '../../../data/about/about-page-data.json';
@@ -19,14 +21,14 @@ export default function Hero() {
 				>
 					{HeroData.aboutHeroSection.heading}
 				</motion.h2>
-				<motion.h1
+				<motion.h3
 					initial={{ opacity: 0, y: 50 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ delay: 0.2, duration: 0.6 }}
 					className='text-4xl md:text-5xl leading-tight px-53 mb-12'
 				>
 					{HeroData.aboutHeroSection.sectionHeading}
-				</motion.h1>
+				</motion.h3>
 				<motion.h1
 					initial={{ opacity: 0, y: 50 }}
 					animate={{ opacity: 1, y: 0 }}
