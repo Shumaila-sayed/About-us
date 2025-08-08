@@ -5,9 +5,10 @@
         "subHeading": "End-to-End Cybersecurity",
         "buttonText": "Protect Your Business Now!"
     }, "aboutOurMission": {
-        "sectionHeading": "Our Mission",
+        "sectionHeading": "Our Mission ",
         "subHeading": "at Central Data Storage",
         "paragraph": "At Central Data Storage, our mission has evolved, because your threats have too. What began with clean, verified backup has now grown into a 360° cybersecurity commitment. Today, we protect not just your data, but your entire digital ecosystem.",
+        "subParagraph": "From ransomware recovery to real-time threat detection, identity protection to endpoint defense, we deliver fully managed cybersecurity solutions backed by human expertise and clean data confidence.",
         "subText": "We detect. We respond. We restore."
     }
 }
