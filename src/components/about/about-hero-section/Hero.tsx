@@ -3,16 +3,17 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import HeroData from '../../../data/about/about-page-data.json';
+import Button from '../../button/Button';
 
 export default function Hero() {
 	return (
 		<section
-			className='bg-gradient-to-r from-[#1177FE] to-[#001746] text-white py-25 rounded-3xl relative overflow-hidden m-7'
+			className='bg-gradient-to-r from-[#1177FE] to-[#001746]  text-white py-25 rounded-3xl relative overflow-hidden m-7'
 			style={{
 				boxShadow: 'inset 0 -90px 90px -70px #C4ECFE',
 			}}
 		>
-			<div className='max-w-5xl mx-auto px-4 text-center relative z-2'>
+			<div className='md:max-w-5xl mx-auto md:mt-0 mt-[-12px] px-4 text-center relative z-2'>
 				<motion.h2
 					initial={{ opacity: 0, y: 40 }}
 					animate={{ opacity: 1, y: 0 }}
@@ -25,7 +26,7 @@ export default function Hero() {
 					initial={{ opacity: 0, y: 50 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ delay: 0.2, duration: 0.6 }}
-					className='text-4xl md:text-5xl leading-tight px-53 mb-12'
+					className='text-3xl md:text-5xl leading-tight md:px-42  font-semibold'
 				>
 					{HeroData.aboutHeroSection.sectionHeading}
 				</motion.h3>
@@ -33,7 +34,7 @@ export default function Hero() {
 					initial={{ opacity: 0, y: 50 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ delay: 0.2, duration: 0.6 }}
-					className='text-4xl md:text-5xl leading-tight px-53 mb-12'
+					className='text-3xl font-bold md:text-5xl leading-tight md:px-42 mb-4 md:mb-12'
 				>
 					{HeroData.aboutHeroSection.subHeading}
 				</motion.h1>
@@ -41,53 +42,52 @@ export default function Hero() {
 					initial={{ scale: 0.9, opacity: 0 }}
 					animate={{ scale: 1, opacity: 1 }}
 					transition={{ delay: 0.4, duration: 0.5 }}
-					className='bg-[#7dd4ee8c] text-white mt-4 border-2 border-x-[#C4ECFE] border-y-0 px-6 py-3 flex max-w-fit mx-auto items-center gap-2 rounded-full'
 				>
-					{HeroData.aboutHeroSection.buttonText}{' '}
-					<Image
-						src='/arrow.png'
-						alt='Arrow'
-						width={30}
-						height={20}
-					/>
+					<Button type='tertiary' variant='btn-transparent' icon='/arrow.png'>{HeroData.aboutHeroSection.buttonText}</Button>
 				</motion.button>
 			</div>
 
-			<div className='absolute left-105 top-1 w-30 z-3 '>
-				<Image
-					src='/server-center.svg'
-					alt='Server center'
-					width={150}
-					height={150}
-					className='drop-shadow-[0_0_40px_#C4ECFE]'
-				/>
+			<div className='absolute md:left-105 left-20 top-1 w-30 z-3 transition-transform duration-300 hover:scale-110'>
+				<div className='relative w-[80px] sm:w-[100px] md:w-[150px] h-[80px] sm:h-[100px] md:h-[150px]'>
+					<Image
+						src='/server-center.svg'
+						alt='Server center'
+						fill
+						className='drop-shadow-[0_0_40px_#C4ECFE] object-contain'
+					/>
+				</div>
 			</div>
-			<div className='absolute right-8 bottom-12 w-50 z-4'>
-				<Image
-					src='/server-right.svg'
-					alt='Server right'
-					width={150}
-					height={150}
-					className='drop-shadow-[0_0_40px_#C4ECFE]'
-				/>
+			<div className='absolute md:right-8 left-70 md:bottom-12 bottom-5 w-50 z-4 transition-transform duration-300 hover:scale-110'>
+				<div className='relative w-[80px] sm:w-[100px] md:w-[150px] h-[80px] sm:h-[100px] md:h-[150px]'>
+					<Image
+						src='/server-right.svg'
+						alt='Server right'
+						fill
+						className='drop-shadow-[0_0_40px_#C4ECFE] object-contain'
+					/>
+				</div>
 			</div>
 
-			<div className='absolute left-0.2 bottom-0.5 w-40 z-3'>
-				<Image
-					src='/server-left.svg'
-					alt='Server left'
-					width={150}
-					height={150}
-				/>
+			<div className='absolute md:left-[-18] left-[-14] bottom-0 w-40 z-3 transition-transform duration-300 hover:scale-110'>
+				<div className='relative w-[80px] sm:w-[100px] md:w-[150px] h-[80px] sm:h-[100px] md:h-[150px]'>
+					<Image
+						src='/server-left.svg'
+						alt='Server left'
+						fill
+						className='drop-shadow-[0_0_40px_#C4ECFE] object-contain'
+					/>
+				</div>
 			</div>
 
 			<div className='absolute left-1 top-1 w-1100 opacity-40 '>
-				<Image
-					src='/arch.svg'
-					alt='Arch'
-					width={1300}
-					height={80}
-				/>
+				<div className='relative w-[350px] md:w-[1300px] h-[320px]  md:h-[600px]'>
+					<Image
+						src='/arch.svg'
+						alt='Arch'
+						fill
+						className='object-contain'
+					/>
+				</div>
 			</div>
 		</section>
 	);

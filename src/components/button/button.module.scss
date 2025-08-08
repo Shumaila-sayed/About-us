@@ -4,4 +4,16 @@
         color: white;
         font-weight: bold;
     }
+    &.btn-transparent {
+        background-color: #7dd4ee8c;
+        color: white;
+        border-width: 2px;
+        border-left-color: #C4ECFE;
+        border-right-color: #C4ECFE;
+        border-top-width: 0;
+        border-bottom-width: 0;
+        padding: 0.75rem 1.5rem ;
+        max-width: fit-content;
+        margin-inline: auto;
+    }
 }

@@ -49,14 +49,14 @@ const Button: React.FC<ButtonProps> = ({
 			onClick={onClick}
 			type={buttonType}
 		>
-			<p className='text-[14px] md:text-[16px]'>
+			<p className='text-[14px] md:text-[16px] flex items-center justify-center gap-2'>
 				{children}{' '}
 				{icon && (
 					<Image
 						src={icon}
 						alt='icon'
-						height={11}
-						width={11}
+						height={20}
+						width={30}
 					/>
 				)}
 			</p>
