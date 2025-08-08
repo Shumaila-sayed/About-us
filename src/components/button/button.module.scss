@@ -1,3 +1,7 @@
 .site-tertiary-btn {
-    
+    &.gradient {
+        background: linear-gradient(to right, #1177FE, #001746);
+        color: white;
+        font-weight: bold;
+    }
 }

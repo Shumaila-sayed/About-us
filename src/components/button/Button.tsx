@@ -1,8 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
+import styles from './button.module.scss';
 
 interface ButtonProps {
-	type?: 'primary' | 'secondary';
+	type?: 'primary' | 'secondary' | 'tertiary';
 	variant?: 'normal' | 'gradient' | 'btn-transparent';
 	size?: 'small' | 'medium' | 'large';
 	icon?: string;
@@ -31,12 +32,12 @@ const Button: React.FC<ButtonProps> = ({
 	const buttonTypeClasses = {
 		primary: 'bg-[#1177FE] text-white min-w-25 border border-[#1177FE]',
 		secondary: 'border border-[#001746] text-[#001746]',
-		tertiary: '',
+		tertiary: `${styles["site-tertiary-btn"]} ${styles[variant]}`,
 	};
 
 	const buttonSizeClasses = {
 		small: '',
-		medium: '',
+		medium: 'px-10 py-3',
 		large: '',
 	};
 

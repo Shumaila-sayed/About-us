@@ -1,14 +1,13 @@
-'use client';
-
 import Image from 'next/image';
 import footerData from '../../data/footer/footer-data.json';
+import Button from '../button/Button';
 
 export default function Footer() {
 
 	return (
 		<footer className='bg-white my-4 p-8 text-sm text-gray-600 border-t-2 border-t-[#001746]'>
-			<div className='max-w-7xl mx-auto flex justify-between gap-6 mb-4'>
-				<div>
+			<div className='max-w-7xl mx-auto md:flex md:justify-between gap-6 mb-4'>
+				<div className='mb-6'>
 					<div className='flex gap-5 items-center'>
 						{footerData.badges.map((src, i) => (
 							<Image
@@ -20,30 +19,25 @@ export default function Footer() {
 							/>
 						))}
 					</div>
-					<p className='max-w-[24rem] mt-3'>{footerData.disclaimer}</p>
+					<p className='md:max-w-[24rem] mt-3 pl-3'>{footerData.disclaimer}</p>
 				</div>
 
-				<div>
-					<p className='font-extrabold pl-8 mb-4'>{footerData.newsletterText}</p>
-					<form className='flex rounded-full bg-gray-100 py-2 px-4 '>
+				<div className='mb-4'>
+					<p className='font-extrabold text-black text-center md:pl-8 mb-4'>{footerData.newsletterText}</p>
+					<form className='flex rounded-full w-[22rem] m-auto bg-gray-100 py-2 md:px-4 px-7'>
 						<input
 							type='email'
 							placeholder='Enter your e-mail'
-							className='w-[18rem] outline-none'
+							className='md:w-[18rem] outline-none'
 						/>
-						<button
-							type='submit'
-							className='bg-gradient-to-r from-[#1177FE] to-[#001746] text-white px-10 py-3 font-semibold rounded-full'
-						>
-							Subscribe
-						</button>
+						<Button type='tertiary' variant='gradient' size='medium' buttonType='submit'>Subscribe</Button>
 					</form>
 				</div>
 			</div>
 
-			<div className='flex justify-between'>
+			<div className='flex flex-col-reverse md:flex-row justify-between'>
 				<div className='py-4 px-2 text-xs'>
-					<p className='mb-2 font-extrabold'>{footerData.copyRightText}</p>
+					<p className='mb-2 font-extrabold md:text-left text-center'>{footerData.copyRightText}</p>
 					<div className='flex flex-wrap justify-center gap-3 text-gray-500'>
 						{footerData.legalLinks.map((link, i) => (
 							<a
@@ -56,7 +50,7 @@ export default function Footer() {
 						))}
 					</div>
 				</div>
-				<div className='space-y-3 text-center mr-3 md:text-right'>
+				<div className='space-y-3 text-center mr-3 mb-6 md:text-right'>
 					<div className='flex justify-center md:justify-end gap-2'>
 						{footerData.socialMedia.map((src, i) => (
 							<Image
