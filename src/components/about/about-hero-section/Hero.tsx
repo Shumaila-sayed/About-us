@@ -18,7 +18,7 @@ export default function Hero() {
 					initial={{ opacity: 0, y: 40 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.6 }}
-					className='text-xl uppercase mb-2'
+					className='md:text-3xl text-2xl mb-2'
 				>
 					{HeroData.aboutHeroSection.heading}
 				</motion.h2>
@@ -47,8 +47,8 @@ export default function Hero() {
 				</motion.button>
 			</div>
 
-			<div className='absolute md:left-105 left-20 top-1 w-30 z-3 transition-transform duration-300 hover:scale-110'>
-				<div className='relative w-[80px] sm:w-[100px] md:w-[150px] h-[80px] sm:h-[100px] md:h-[150px]'>
+			<div className='absolute md:left-100 left-20 top-1 w-30 z-3 transition-transform duration-300 hover:scale-110'>
+				<div className='relative w-[80px] md:w-[170px] h-[80px]  md:h-[170px]'>
 					<Image
 						src='/server-center.svg'
 						alt='Server center'
@@ -57,8 +57,8 @@ export default function Hero() {
 					/>
 				</div>
 			</div>
-			<div className='absolute md:right-8 left-70 md:bottom-12 bottom-5 w-50 z-4 transition-transform duration-300 hover:scale-110'>
-				<div className='relative w-[80px] sm:w-[100px] md:w-[150px] h-[80px] sm:h-[100px] md:h-[150px]'>
+			<div className='absolute md:left-250  left-70 md:bottom-12 bottom-5 w-50 z-4 transition-transform duration-300 hover:scale-110'>
+				<div className='relative w-[80px]  md:w-[250px] h-[80px]  md:h-[250px]'>
 					<Image
 						src='/server-right.svg'
 						alt='Server right'
@@ -68,8 +68,8 @@ export default function Hero() {
 				</div>
 			</div>
 
-			<div className='absolute md:left-[-18] left-[-14] bottom-0 w-40 z-3 transition-transform duration-300 hover:scale-110'>
-				<div className='relative w-[80px] sm:w-[100px] md:w-[150px] h-[80px] sm:h-[100px] md:h-[150px]'>
+			<div className='absolute md:left-[-30] left-[-14] bottom-0 w-40 z-3 transition-transform duration-300 hover:scale-110'>
+				<div className='relative w-[80px] md:w-[250px] h-[80px] md:h-[250px]'>
 					<Image
 						src='/server-left.svg'
 						alt='Server left'
