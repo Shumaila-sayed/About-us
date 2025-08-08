@@ -30,7 +30,7 @@ const Button: React.FC<ButtonProps> = ({
 	]?.join(' ');
 
 	const buttonTypeClasses = {
-		primary: 'bg-[#1177FE] text-white min-w-25 border border-[#1177FE]',
+		primary: 'bg-[#1177FE] text-white md:min-w-25 border border-[#1177FE]',
 		secondary: 'border border-[#001746] text-[#001746]',
 		tertiary: `${styles["site-tertiary-btn"]} ${styles[variant]}`,
 	};
