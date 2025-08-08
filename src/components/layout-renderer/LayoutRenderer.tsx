@@ -9,8 +9,7 @@ function LayoutRenderer({ children }: { children: React.ReactNode }) {
 			<Head>
 				<link
 					rel='icon'
-					type='image/svg'
-					sizes='16x16'
+					type='image/svg+xml'
 					href='/logo.svg'
 				/>
 			</Head>

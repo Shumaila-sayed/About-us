@@ -38,13 +38,13 @@ export default function Hero() {
 				>
 					{HeroData.aboutHeroSection.subHeading}
 				</motion.h1>
-				<motion.button
+				<motion.div
 					initial={{ scale: 0.9, opacity: 0 }}
 					animate={{ scale: 1, opacity: 1 }}
 					transition={{ delay: 0.4, duration: 0.5 }}
 				>
 					<Button type='tertiary' variant='btn-transparent' icon='/arrow.png'>{HeroData.aboutHeroSection.buttonText}</Button>
-				</motion.button>
+				</motion.div>
 			</div>
 
 			<div className='absolute md:left-100 left-20 top-1 w-30 z-3 transition-transform duration-300 hover:scale-110'>
